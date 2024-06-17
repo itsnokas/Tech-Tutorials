@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <style>
+
+body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            color: #000000;
+            padding: 10px 0; 
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            font-weight: bold;
+        }
+
+        .cab-container {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 100px;
+            color: #000000;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .clogo-img {
+            width: 250px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-size: 20px;
+            color: #000000;
+            font-weight: bold;
+        }
+
+        nav ul li a.home {
+            color: #4da6ee;
+        }
+
+        nav ul li a:hover {
+            color: #4da6ee;
+        }
+
+        .home {
+            color: #4da6ee;
+        }
+
+
+        nav ul li a.home {
+    color: #4da6ee; 
+}
+
+       
+
+.login-button {
+    background: linear-gradient(to right, #64b5f6, #2196f3); 
+    color: #fff; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    border: none; 
+    text-decoration: none; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    font-size: 16px; 
+    font-weight: bold; 
+    text-transform: none; 
+    cursor: pointer; 
+    transition: transform 0.2s ease; 
+}
+
+.login-button:hover {
+    transform: translateY(-2px); 
+    color: #fff; 
+}
+
+
+
+.tutorial {
+    width: 30%;
+    margin-bottom: 20px;
+    background-color: #ffffff; 
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.tutorial img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.tutorial .tutorial-info {
+    padding: 20px;
+}
+
+.tutorial h3 {
+    color: #0d47a1; 
+    margin-bottom: 10px;
+}
+
+.tutorial .btn {
+    color: #0d47a1; 
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.tutorial .btn:hover {
+    color: #0d47a1;
+    text-decoration: none;
+}
+
+
+
+.tutorial-section {
+    position: relative;
+}
+
+
+
+.tutorial-section {
+    position: relative;
+}
+
+
+
+
+.tutorial-section {
+    position: relative;
+}
+
+
+.tutorial-section {
+    position: relative;
+}
+
+
+
+.arrows {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    width: calc(100% - 40px); 
+    margin: 0 20px; 
+}
+
+.arrow {
+    width: 30px;
+    height: 30px; 
+    background-color: gray; 
+    color: white; 
+    font-size: 24px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow-right {
+    margin-left: auto; 
+}
+
+
+
+
+footer {
+    background-color: #ffffff;
+    border-top: 1px solid #ccc;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+}
+
+.container-rodape {
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 250px;
+    margin-right: 20px; 
+}
+
+.links-importantes,
+.divisoes,
+.contato {
+    margin-right: 30px; 
+}
+
+h3 {
+    font-weight: bold;
+    color: #0d47a1;
+    margin-bottom: 10px;
+    margin-right: 10px; 
+    height: 24px; 
+    display: inline-block;
+    vertical-align: middle;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #424242;
+    transition: color 0.3s ease;
+    margin-right: 10px; 
+}
+
+ul li a:hover {
+    color: #2196f3;
+}
+
+.criado-por {
+    color: #757575;
+    margin-top: 20px;
+    text-align: center; 
+    font-size: 14px; 
+}
+
+footer {
+      
+      transform: translateY(100%);
+      transition: transform 1s ease; 
+    }
+
+
+    .show-footer {
+      transform: translateY(0);
+    }
+
+
+    .animate-down {
+      opacity: 0;
+      transition: opacity 1s ease;
+    }
+
+    .show {
+      opacity: 1;
+    }
+
+
+    body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+
+        header {
+            background: none;
+            color: #fff; 
+            padding: 20px 0;
+            text-align: center;
+            position: relative; 
+            z-index: 1; 
+            box-shadow: none; 
+        }
+
+        .destaque {
+            text-align: center;
+            padding: 100px 0; 
+            color: #fff;
+        }
+
+        .destaque h1 {
+            font-size: 36px;
+            line-height: 1.5; 
+            margin-bottom: 20px; 
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .destaque p {
+            font-size: 16px; 
+            margin-bottom: 30px; 
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
+        }
+
+        .ver-tutoriais {
+            background: linear-gradient(to right, #64b5f6, #2196f3); 
+            color: #fff; 
+            padding: 10px 20px; 
+            border-radius: 5px; 
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px; 
+            text-decoration: none; 
+            transition: background 0.3s ease;
+            display: inline-block;
+            margin-right: 20px; 
+        }
+
+        .ver-tutoriais:hover {
+            background: linear-gradient(to right, #2196f3, #64b5f6); 
+        }
+
+
+.arrow {
+    width: 30px; 
+    height: 30px; 
+    background-color: #4da6ee; 
+    color: #f0f0f0; 
+    font-size: 24px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #eee; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+.arrow-left {
+    margin-right: 10px; 
+}
+
+.arrow-right {
+    margin-left: 10px; 
+}
+
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px; 
+    color: #4da6ee; 
+    font-size: 24px; 
+    font-weight: bold; 
+}
+
+
+.arrows {
+    position: relative; 
+    width: 100%;
+}
+
+.arrow-left {
+    position: absolute; 
+    left: 0; 
+}
+
+.arrow-right {
+    position: absolute; 
+    right: 0; 
+}
+
+.container-gray {
+    padding-top: 20px;
+}
+
+.section-title {
+    text-align: center;
+    color: #000;
+    font-size: 2em; 
+    margin-bottom: 20px; 
+}
+
+body {
+    margin: 0; 
+    padding: 0; 
+}
+
+.container-gray {
+    width: 100%; 
+    background-color: #ffffff;
+    padding-top: 10px; 
+    padding-bottom: 20px; 
+    box-sizing: border-box; 
+}
+
+.section-title {
+    text-align: center;
+    color: #003366; 
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.section-title {
+    text-align: center;
+    color: #003366; 
+    font-size: 2em; 
+    margin-bottom: 10px;
+    margin-top: 0; 
+}
+
+.section-title {
+    text-align: center;
+    color: #003366;
+    font-size: 2.5em;
+    margin-bottom: 10px; 
+}
+
+.object-container {
+    width: 200px; 
+    height: 200px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px; 
+    border: 1px solid rgba(204, 204, 204, 0.5); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+    text-align: center; 
+}
+
+.container-gray {
+    width: 100%; 
+    background-color: #fff; 
+    padding-top: 0; 
+    padding-bottom: 20px; 
+    box-sizing: border-box; 
+}
+
+.container-objetos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; 
+    max-width: 1200px; 
+    margin: 20px auto 0;
+}
+
+.object-container:hover {
+    box-shadow: 0 0 15px rgba(0, 122, 255, 0.8); 
+}
+
+.object-button a {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+.object-button a:hover {
+    color: #4da6ee;
+}
+
+.section-title {
+    text-align: center;
+    color: #003366; 
+    font-size: 2em; 
+    margin-bottom: 10px; 
+}
+
+body {
+    margin: 0; 
+    padding: 0; 
+}
+
+.container-gray {
+    width: 100%; 
+    background-color: #ffffff; 
+    padding-top: 10px; 
+    padding-bottom: 20px; 
+    box-sizing: border-box;
+}
+
+.section-title {
+    text-align: center;
+    color: #003366; 
+    font-size: 2.5em;
+    margin-bottom: 10px; 
+}
+
+.object-container {
+    width: 200px; 
+    height: 200px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #fff; 
+    box-shadow: none; 
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+    text-align: center; 
+}
+
+.container-objetos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px; 
+    max-width: 1200px; 
+    margin: 20px auto 0; 
+}
+
+.object-button a {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+.object-button a:hover {
+    color: #4da6ee;
+}
+
+.tutoriais-comentados {
+    background-color: #ffffff;
+    padding: 20px 0;
+    text-align: center; 
+}
+
+.section-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.tutoriais-comentados {
+    background-color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.container-comentados {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center; /* Centraliza o título */
+}
+
+.arrows {
+    display: flex;
+    justify-content: space-between; /* Alinha as setas nas extremidades */
+    width: 100%;
+    max-width: 1200px; /* Limita a largura máxima */
+    margin: 0 auto; /* Centraliza as setas e tutoriais */
+}
+
+.arrow {
+    width: 30px;
+    height: 30px;
+    background-color: #4da6ee;
+    color: #f0f0f0;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tutorial-section {
+    display: flex;
+    justify-content: center; /* Centraliza os tutoriais */
+    align-items: center;
+    position: relative;
+    padding: 40px 0;
+}
+ </style>
+</head>
+<body>
+
+   
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/loogogo-removebg-preview.png" alt="Seu Logo" class="logo-img">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="home">Home</a></li>
+                    <li><a href="tutorials/tutoriais.html" class="tutorials">Tutoriais</a></li>
+                    <li><a href="about/sobre.html" class="sobre">Sobre</a></li>
+                    <li><a href="contacto/contacto.html" class="sobre">Contacto</a></li>
+                    <li><a href="login/login.html" class="login-button">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+       <section class="destaque">
+        <div class="container">
+            <h1>Encontre aqui os tutoriais mais úteis de informática!</h1>
+            <p>Descobre mais sobre o mundo da tecnologia no nosso site e esclarece todas as tuas dúvidas connosco!</p>
+        </div>
+        
+    <div style="text-align: left; margin-left: 100px;">
+        <a href="pesquisa.html" class="ver-tutoriais">Pesquisar</a>
+    </div>
+    </section>
+   
+
+
+    <section class="objetos">
+        <div class="container-gray">
+           
+            <div class="container-objetos">
+                <div class="object-container">
+                    <div class="object-button">
+                        <div class="image-wrapper">
+                            <img src="images_categorias/sistemas.PNG" alt="Descrição da imagem">
+                        </div>
+                        <p><a href="programacao/programacao.html"><strong>Sistemas Operativos</strong></a></p>
+                    </div>
+                </div>
+                <div class="object-container">
+                    <div class="object-button">
+                        <div class="image-wrapper">
+                            <img src="images_categorias/hardwares.PNG" alt="Descrição da imagem">
+                        </div>
+                        <p><a href="hardware/hardware.html"><strong>Hardware</strong></a></p>
+                    </div>
+                </div>
+                <div class="object-container">
+                    <div class="object-button">
+                        <div class="image-wrapper">
+                            <img src="images_categorias/rede.PNG" alt="Descrição da imagem">
+                        </div>
+                        <p><a href="redes/redes.html"><strong>Redes</strong></a></p>
+                    </div>
+                </div>
+                <div class="object-container">
+                    <div class="object-button">
+                        <div class="image-wrapper">
+                            <img src="images_categorias/informatic.PNG" alt="Descrição da imagem">
+                        </div>
+                        <p><a href="informatica/Informatica.html"><strong>Configuração</strong></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tutoriais-comentados">
+        <div class="container-comentados">
+            <h2 class="section-title">Tutoriais Mais Comentados</h2>
+            <div class="arrows">
+                <div class="arrow arrow-left">&lt;</div>
+                <div class="arrow arrow-right">&gt;</div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="tutorial-section">
+        <div class="tutorials-container">
+            <!-- Aqui serão inseridos os tutoriais dinamicamente -->
+        </div>
+    </div>
+
+
+<div style="height: 20px;"></div>
+
+
+<footer id="rodape" class="animate-down">
+    <div class="container-rodape">
+      <div class="logo">
+        <img src="images/image-removebg-preview.png" alt="Logo do Site">
+      </div>
+
+      <div class="links-importantes">
+        <h3>Páginas</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about/sobre.html">Sobre</a></li>
+          <li><a href="tutorials/tutoriais.html">Tutoriais</a></li>
+          <li><a href="login/login.html">Login</a></li>
+        </ul>
+      </div>
+      <div class="divisoes">
+        <h3>Categorias</h3>
+        <ul>
+          <li><a href="programacao/programacao.html">Sistemas Operativos</a></li>
+          <li><a href="informatica/Informatica.html">Manutenção e Configuração</a></li>
+          <li><a href="hardware/hardware.html">Hardware</a></li>
+          <li><a href="redes/redes.html">Redes</a></li>
+        </ul>
+      </div>
+      <div class="contato">
+        <h3>Contacto</h3>
+        <p>Email: lara2006lopes@gmail.com</p>
+        <p>Telefone: 961371011</p>
+      </div>
+    </div>
+    <p class="criado-por">Created by Lara Lopes</p>
+  </footer>
+
+  <script>
+    // Verifica se o utilizador rolou até o final da página
+    function isAtBottom() {
+      return (window.innerHeight + window.scrollY) >= document.body.offsetHeight;
+    }
+  
+    // Mostra o rodapé quando o utilizador rola até o final da página
+    function showFooter() {
+      var footer = document.getElementById('rodape');
+      if (isAtBottom()) {
+        footer.classList.add('show-footer');
+      }
+    }
+  
+    // Verifica quando os elementos animáveis estão visíveis na tela
+    function checkElementsVisibility() {
+      var elements = document.querySelectorAll('.animate-down');
+      elements.forEach(function(element) {
+        var position = element.getBoundingClientRect();
+        var isVisible = position.top < window.innerHeight;
+        if (isVisible) {
+          element.classList.add('show');
+        }
+      });
+    }
+  
+
+    window.addEventListener('scroll', function() {
+      showFooter();
+      checkElementsVisibility();
+    });
+  
+   
+    window.addEventListener('load', function() {
+      checkElementsVisibility();
+    });
+  </script>
+
+
+ 
+<script>window.aichatbotApiKey="36a32e82-0acc-4a7b-b1d0-b8e1071281e3"; window.aichatbotProviderId="f9e9c5e4-6d1a-4b8c-8d3f-3f9e9c5e46d1";</script><script src="https://script.chatlab.com/aichatbot.js" id="36a32e82-0acc-4a7b-b1d0-b8e1071281e3" defer></script>
+
+</body>
+<script src="script.js"></script>
+</body>
+</html>

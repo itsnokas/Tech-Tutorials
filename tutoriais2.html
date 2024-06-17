@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutoriais</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+            background-color: #ffffff;
+            color: #000000;
+            padding: 10px 0; 
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            font-weight: bold;
+            margin-bottom: 30px; 
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    color: #000000;
+    font-weight: bold;
+    margin-top: 10px;/
+}
+
+.logo-img {
+    width: 150px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #000000;
+    font-weight: bold;
+}
+
+nav ul li a.tutorials {
+    color: #4da6ee;
+}
+
+nav ul li a:hover {
+    color: #4da6ee;
+}
+
+.tutorials {
+    color: #4da6ee;
+}
+
+
+.login-button {
+    background: linear-gradient(to right, #64b5f6, #2196f3); 
+    color: #fff; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    border: none; 
+    text-decoration: none; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    font-size: 16px; 
+    font-weight: bold;
+    text-transform: none; 
+    cursor: pointer; 
+    transition: transform 0.2s ease; 
+}
+
+.login-button:hover {
+    transform: translateY(-2px); 
+    color: #fff; 
+}
+
+
+.tutorial-section {
+position: relative;
+background-color: #f0f0f0; 
+margin-bottom: 20px; /* Espaçamento entre as seções */
+width: 100%; 
+box-sizing: border-box; 
+}
+
+
+
+.container {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+padding: 20px;
+}
+
+.tutorial {
+width: 30%;
+margin-bottom: 20px;
+background-color: #ffffff; 
+border-radius: 10px;
+overflow: hidden;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+transition: transform 0.3s ease;
+height: 520px;
+}
+
+.tutorial:hover {
+transform: translateY(-5px); 
+}
+
+.tutorial img {
+width: 100%;
+height: auto;
+border-bottom: 1px solid #ccc; 
+}
+
+
+.tutorial-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.tutorial-info h3 {
+    color: #0d47a1;
+    margin-bottom: 10px; 
+    margin-top: 0; 
+}
+
+.tutorial-info p {
+    margin-bottom: 10px; 
+}
+
+.learn-more {
+    color: #0d47a1;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 0; 
+}
+
+
+
+.btn-filtrar {
+    background: linear-gradient(to right, #64B5F6, #2196F3);
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-filtrar:hover {
+    background: linear-gradient(to right, #2196F3, #64B5F6); 
+}
+
+
+.categorias {
+    position: absolute;
+    top: calc(100% + 10px); 
+    left: 50%; 
+    transform: translateX(-50%); 
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    display: none; 
+    z-index: 1; /* Garante que as categorias estejam acima do conteúdo */
+}
+
+.filtrar-container:hover .categorias {
+    display: block; 
+}
+
+.categorias ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between; 
+    border-top: 2px solid #64B5F6;
+    padding-top: 10px; 
+    margin-top: 10px; 
+}
+
+.categorias ul li {
+    margin-bottom: 5px;
+}
+
+.categorias ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    padding: 5px 10px; 
+}
+
+.categorias ul li a:hover {
+    color: #2196F3;
+}
+
+
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 25vh;
+    margin-top: 20px;
+  }
+  
+  #titulo {
+    font-size: 36px;
+    font-weight: bold;
+    color: #2196F3;
+    margin-bottom: 20px;
+  }
+  
+  #filtro {
+    background-color: #2196F3;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+  }
+  
+  #filtro:hover {
+    background-color: #64B5F6;
+  }
+  
+  #categorias {
+    display: none;
+  }
+  
+  #categorias a {
+    background-color: #fff;
+    color: #2196F3;
+    border: 2px solid #2196F3;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
+  
+  #categorias a:hover {
+    background-color: #2196F3;
+    color: #fff;
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.arrow {
+    font-size: 24px;
+    cursor: pointer;
+    margin: 0 10px;
+    color: black; 
+}
+
+.page-number {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    color: black; 
+    border-radius: 50%; 
+    text-align: center;
+    line-height: 40px;
+    margin: 0 10px;
+    border: 2px solid #2196F3; 
+    box-shadow: 0 0 10px rgba(22, 129, 245, 0.5); 
+}
+
+footer {
+    background-color: #ffffff;
+    border-top: 1px solid #ccc;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+}
+
+.container-rodape {
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 150px; 
+    margin-right: 20px; 
+}
+
+.links-importantes,
+.divisoes,
+.contato {
+    margin-right: 30px; 
+}
+
+h3 {
+    font-weight: bold;
+    color: #0d47a1;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    height: 24px; 
+    display: inline-block; 
+    vertical-align: middle; 
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #424242;
+    transition: color 0.3s ease;
+    margin-right: 10px; 
+}
+
+ul li a:hover {
+    color: #2196f3;
+}
+
+.criado-por {
+    color: #757575;
+    margin-top: 20px; 
+    text-align: center; 
+    font-size: 14px; 
+}
+
+
+footer {
+      /* Inicia o rodapé oculto */
+      transform: translateY(100%);
+      transition: transform 1s ease; 
+    }
+
+
+    .show-footer {
+      transform: translateY(0);
+    }
+
+    /* Estilos para a animação de entrada */
+    .animate-down {
+      opacity: 0;
+      transition: opacity 1s ease;
+    }
+
+   
+    .show {
+      opacity: 1;
+    }
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.arrow {
+    font-size: 24px;
+    cursor: pointer;
+    margin: 0 10px;
+    color: black; 
+}
+
+.page-number {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    color: black; 
+    border-radius: 50%; 
+    text-align: center;
+    line-height: 40px;
+    margin: 0 10px;
+    border: 2px solid #2196F3; 
+    box-shadow: 0 0 10px rgba(22, 129, 245, 0.5);
+}
+
+.scroll-to-top-button {
+            position: fixed;
+            bottom: 20px;
+            left: 20px; 
+            width: 40px;
+            height: 40px;
+            background-color: #2196F3;
+            color: #ffffff;
+            border: none;
+            border-radius: 50%;
+            font-size: 24px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+            z-index: 999;
+        }
+
+        .scroll-to-top-button:hover {
+            background-color: #1d6fc0;
+        }
+ </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="../images/image-removebg-preview.png" alt="Seu Logo" class="logo-img">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html" class="home">Home</a></li>
+                    <li><a href="../tutorials/tutoriais.html" class="tutorials">Tutoriais</a></li>
+                    <li><a href="../about/sobre.html" class="sobre">Sobre</a></li>
+                    <li><a href="../contacto/contacto.html" class="sobre">Contacto</a></li>
+                    <li><a href="../login/login.html" class="login-button">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+      <div id="container">
+        <h2 id="titulo">Todos os Tutoriais</h2>
+        <button id="filtro">Filtrar</button>
+        <div id="categorias">
+          <a href="../programacao/programacao.html">Sistemas Operativos</a>
+          <a href="../hardware/hardware.html">Hardware</a>
+          <a href="../redes/redes.html">Redes</a>
+          <a href="../informatica/informatica.html">Configuração e Manutenção </a>
+        </div>
+      </div>   
+    </main>   
+            <main>
+        <section class="tutorial-section">
+            <div class="background-image"></div>
+            <div class="container">
+                <div class="tutorial">
+                    <img src="../images/transp.PNG" alt="Tutorial 1">
+                    <div class="tutorial-info">
+                        <h3>Como Transferir Arquivos de um computador para Outro?</h3>
+                        <div style="height: 20px;"></div>
+                        <p>Aprenda como transferir arquivos importantes do seu computador para outro.</p>
+                        <a href="../redes/transferirarq.html" class="learn-more">Saber Mais</a>
+                    </div>
+                </div>
+                <div class="tutorial">
+                    <img src="../images/overck.jpg" alt="Tutorial 2">
+                    <div class="tutorial-info">
+                        <h3>Como Fazer Overclock do Processador?</h3>
+                        <p>Aprenda como fazer overclock do processador para ter melhor desempenho.</p>
+                        <a href="../hardware/overclock.html" class="learn-more">Saber Mais</a>
+                    </div>
+                </div>
+                <div class="tutorial">
+                    <img src="../images/aquecip.jpg" alt="Tutorial 3">
+                    <div class="tutorial-info">
+                        <h3>Como Diagnosticar e Resolver Problemas de Superaquecimento do Computador?</h3>
+                        <div style="height: 20px;"></div>
+                        <p>Este tutorial irá ajudá-lo a diagnosticar e resolver problemas de superaquecimento no computador.</p>
+                        <a href="../hardware/aquecimento.html" class="learn-more">Saber Mais</a>
+                </div>
+            </div>
+        </section>
+    
+        <section class="tutorial-section">
+            <div class="background-image"></div>
+            <div class="container">
+                <div class="tutorial">
+                    <img src="../images/linui.jpeg" alt="Imagem do Tutorial">
+                    <div class="tutorial-info">
+                        <h3>Como Instalar o Sistema Operativo Linux?</h3>
+                        <p>Este tutorial aborda passo a passo como instalar o sistema operativo Linux em um computador.</p>
+                        <a href="../programacao/linux.html" class="learn-more">Saber Mais</a>
+                    </div>
+                </div>
+                <div class="tutorial">
+                    <img src="../images/routei.jpeg" alt="Imagem do Tutorial 1">
+                    <div class="tutorial-info">
+                        <h3>Como Configurar um Router?</h3>
+                        <p>Aprenda, passo a passo como configurar um router para ter acesso à internet em casa ou em um escritório. </p>
+                        <a href="../redes/router.html" class="learn-more">Saber Mais</a>
+                    </div>
+                </div>
+                <div class="tutorial">
+                    <img src="../images/telab.jpeg" alt="Imagem do Tutorial 2">
+                    <div class="tutorial-info">
+                        <h3>Como Resolver o Problema da Tela Azul no Windows?</h3>
+                        <div style="height: 20px;"></div>
+                        <p>Siga os passos para saber resolver o problema da Tela Azul no Windows.</p>
+                        <a href="../programacao/telaazul.html" class="learn-more">Saber Mais</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+ 
+    <div class="pagination">
+        <div class="arrow left" onclick="previousPage()">&#10094;</div>
+        <div class="page-number" id="pageNumber">2</div>
+        <div class="arrow right" onclick="nextPage()">&#10095;</div>
+    </div>
+</main>
+
+
+<div style="height: 20px;"></div>
+<button id="scrollToTopButton" class="scroll-to-top-button"><i class="fas fa-arrow-circle-up"></i></button>
+
+<footer id="rodape" class="animate-down">
+    <div class="container-rodape">
+      <div class="logo">
+        <img src="../images/image-removebg-preview.png" alt="Logo do Site">
+      </div>
+  
+      <div class="links-importantes">
+        <h3>Páginas</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="../about/sobre.html">Sobre</a></li>
+          <li><a href="../tutorials/tutoriais.html">Tutoriais</a></li>
+          <li><a href="../login/login.html">Login</a></li>
+        </ul>
+      </div>
+      <div class="divisoes">
+        <h3>Categorias</h3>
+        <ul>
+          <li><a href="../programacao/programacao.html">Sistemas Operativos</a></li>
+          <li><a href="../informatica/Informatica.html">Manutenção e Configuração</a></li>
+          <li><a href="../hardware/hardware.html">Hardware</a></li>
+          <li><a href="../redes/redes.html">Redes</a></li>
+        </ul>
+      </div>
+      <div class="contato">
+        <h3>Contacto</h3>
+        <p>Email: lara2006lopes@gmail.com</p>
+        <p>Telefone: 961371011</p>
+      </div>
+    </div>
+    <p class="criado-por">Created by Lara Lopes</p>
+  </footer>
+
+    <script>
+        function nextPage() {
+            // Redireciona para a página 1 
+            window.location.href = 'tutoriais.html';
+        }
+
+        function previousPage() {
+            // Redireciona para a página 1 
+            window.location.href = 'tutoriais.html';
+        }
+    </script>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const filtroBtn = document.getElementById("filtro");
+  const categorias = document.getElementById("categorias");
+
+  filtroBtn.addEventListener("click", function() {
+    categorias.style.display = (categorias.style.display === "none") ? "flex" : "none";
+  });
+
+  const categoriaBtns = document.querySelectorAll("#categorias button");
+  categoriaBtns.forEach(function(btn) {
+    btn.addEventListener("click", function() {
+      console.log("Categoria selecionada: " + btn.textContent);
+    });
+  });
+}); 
+</script>
+
+<script>
+    // Verifica se o utilizador rolou até o final da página
+    function isAtBottom() {
+      return (window.innerHeight + window.scrollY) >= document.body.offsetHeight;
+    }
+  
+    // Mostra o rodapé quando o utilizador rola até o final da página
+    function showFooter() {
+      var footer = document.getElementById('rodape');
+      if (isAtBottom()) {
+        footer.classList.add('show-footer');
+      }
+    }
+  
+    // Verifica quando os elementos de animação estão visíveis na tela
+    function checkElementsVisibility() {
+      var elements = document.querySelectorAll('.animate-down');
+      elements.forEach(function(element) {
+        var position = element.getBoundingClientRect();
+        var isVisible = position.top < window.innerHeight;
+        if (isVisible) {
+          element.classList.add('show');
+        }
+      });
+    }
+  
+    // Verifica quando o utilizador rola a página
+    window.addEventListener('scroll', function() {
+      showFooter();
+      checkElementsVisibility();
+    });
+  
+    // Verifica a visibilidade dos elementos quando a página carrega
+    window.addEventListener('load', function() {
+      checkElementsVisibility();
+    });
+  </script>
+
+<script>
+    document.getElementById("scrollToTopButton").addEventListener("click", function() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+    </script>
+ <script>window.aichatbotApiKey="36a32e82-0acc-4a7b-b1d0-b8e1071281e3"; window.aichatbotProviderId="f9e9c5e4-6d1a-4b8c-8d3f-3f9e9c5e46d1";</script><script src="https://script.chatlab.com/aichatbot.js" id="36a32e82-0acc-4a7b-b1d0-b8e1071281e3" defer></script>   
+    <script src="script.js"></script> 
+</body>
+</html>
